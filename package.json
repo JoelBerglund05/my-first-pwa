@@ -1,0 +1,16 @@
+{
+  "name": "pwa-quizz-game",
+  "scripts": {
+    "scss": "sass",
+    "prettier": "prettier . --write",
+    "cy": "npx cypress open"
+  },
+  "dependencies": {
+    "prettier": "^3.3.3",
+    "sass": "^1.80.3"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.2",
+    "cypress": "^13.15.1"
+  }
+}

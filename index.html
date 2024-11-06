@@ -7,19 +7,20 @@
     <title>Document</title>
   </head>
   <body>
+    <input id="value" />
+    <button id="btn">press me</button>
+    <p id="message"></p>
     <script src="node_modules/axe-core/axe.min.js">
-	axe
-  .run()
-  .then(results => {
-    if (results.violations.length) {
-      throw new Error('Accessibility issues found');
-    }
-  })
-  .catch(err => {
-    console.error('Something bad happened:', err.message);
-  });
-
-
+      axe
+       .run()
+       .then(results => {
+         if (results.violations.length) {
+           throw new Error('Accessibility issues found');
+         }
+       })
+       .catch(err => {
+         console.error('Something bad happened:', err.message);
+       });
     </script>
     <script src="js/main.js"></script>
   </body>
